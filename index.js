@@ -17,12 +17,12 @@ async function main() {
   const result = await client.chat.completions.create({
     messages: [
     { role: "user", content: "My name is Okuhle Charlieman and I am participating in the Microsoft Developer AI Learning Hackathon." },
-    { role: "system", content: "You are a helpful assistant." },
-    { role: "user", content: "Does Azure OpenAI support customer managed keys?" },
-    { role: "assistant", content: "Yes, customer managed keys are supported by Azure OpenAI?" },
-    { role: "user", content: "Do other Azure AI services support this too?" },
+    // { role: "system", content: "You are a helpful assistant." },
+    // { role: "user", content: "Does Azure OpenAI support customer managed keys?" },
+    // { role: "assistant", content: "Yes, customer managed keys are supported by Azure OpenAI?" },
+    // { role: "user", content: "Do other Azure AI services support this too?" },
     ],
-    model: "",
+    model: "gpt-4-vision",
   });
 
   for (const choice of result.choices) {
